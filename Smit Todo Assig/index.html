@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class-20</title>
+
+    <style>
+        .todosContainer {
+            width: 500px;
+            height: 500px;
+            background-color: palevioletred;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 10px;
+            overflow-y: auto; /* Allow scrolling if items exceed height */
+        }
+        .todo {
+            background-color: lightyellow; /* Background color for todo items */
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input id="inp" type="text" style="border-color: aqua;background-color: lavenderblush;">
+    <button onclick="addTodo()" style="border-color: blue;">Add Todo!</button>
+
+    <div id="todos" class="munna-bhai mbbs todosContainer">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
